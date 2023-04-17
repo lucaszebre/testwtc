@@ -1,0 +1,108 @@
+.SneakerDiv{
+    flex: 1 1 calc(25% - 48px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.SneakerCart{
+    gap: 24.48px;
+    padding: 16.9px 0px 16.9px 16.9px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0px 0px 49.7826px rgba(10, 21, 59, 0.06);
+    backdrop-filter: blur(0.82971px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 13.2754px;
+    height: 192.4927520751953px;
+    width: 229px;
+    border-radius: 13.275362014770508px;
+    background: linear-gradient(139.57deg, #FFFFFF 13.8%, rgba(255, 255, 255, 0) 89.15%),
+    linear-gradient(319.36deg, rgba(255, 255, 255, 0.5) 21.89%, rgba(248, 248, 248, 0.5) 100%);
+}
+.SneakerAbsolute{
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+}
+.SneakerImage{
+    position: relative;
+    width: 200px;
+    margin-bottom: -58px;
+    z-index: 10;
+}
+.SneakerBlock1{
+    display: flex;
+    flex-direction: column;
+    gap: 4.98px;
+    justify-content: center;
+    text-align: start;
+    
+}
+.SneakerTitle{
+    height: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    height: 24px;
+    text-transform: uppercase;
+
+}
+
+.SneakerRef{
+    height: 19px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.9348px;
+    line-height: 18px;
+    letter-spacing: -0.398261px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.SneakerIndice{
+    height: 19px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.398261px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+
+.Circle{
+    width: 9.96px;
+    height: 9.96px;
+    border-radius: 50%;
+}
+
+.SneakerBlock2{
+    padding: 0 .5em 0 .5em;
+    width: fit-content;
+    gap: 6.64px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #F9F9F9;
+    height: 28.21px;
+    border-radius: 165.942px;
+}
+
+.SneakerAbsolute{  
+position: absolute;
+top: -65px;
+}

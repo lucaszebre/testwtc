@@ -1,0 +1,147 @@
+.Nav{
+    height: 85px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.NavLogo{
+    position: relative;
+    height: 23.33px;
+    width: 230px;
+}
+.NavWrapper{
+    width: 95%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.NavList{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.NavLink{
+color: #FAFAFA;
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+line-height: 17px;
+cursor: pointer;
+font-family: "AXIS";
+letter-spacing: .1em;
+}
+
+.NavLink:hover{
+    color: gray;
+    box-shadow: gray;
+}
+
+
+
+.ButtonText{
+font-family: 'Monument';
+font-style: normal;
+font-weight: 800;
+line-height: 14px;
+text-align: center;
+color: #000000;
+font-size: 10px;
+letter-spacing: .1em;
+}
+
+.NavButton{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 31px;
+    gap: 10px;
+    background: #00FFB0;
+    border-radius: 32px;
+    width: 100%;
+    height: 44px;
+    border: none;
+    cursor: pointer;
+}
+
+.NavButton:hover{
+    background-color: white;
+}
+.NavButton:focus {
+    outline: none;
+    }
+    .NavButton:active {
+        /* Add this style */
+        transform: none;
+    }
+.NavButton::-moz-focus-inner {
+    border: 0;
+    }
+.NavButton:focus {
+    outline: none;
+}
+
+.NavButton::-moz-focus-inner {
+    border: 0;
+}
+
+.NavBlock{
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.NavMenu{
+    display: none;
+}
+
+@media (max-width:875px) {
+    .NavMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        gap: 5px;
+    }
+    .span1{
+        background-color: #00FFB0;
+        width: 25px;
+        height: 3px;
+        border-radius: 3px;
+    }
+    .span2{
+        background-color: #00FFB0;
+        width: 13px;
+        height: 3px;
+        border-radius: 3px;
+    }
+    .span3{
+        background-color: #00FFB0;
+        width: 20px;
+        height: 3px;
+        border-radius: 3px;
+    }
+    .NavBlock{
+        display: none;
+    }
+
+    .Nav{
+        height: 60px;
+    }
+
+    .NavLogo{
+        width: 114.24px;
+        height: 12.27px;
+    }
+    
+}

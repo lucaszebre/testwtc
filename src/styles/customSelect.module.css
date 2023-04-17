@@ -1,0 +1,57 @@
+/* styles/customSelect.css */
+.CustomSelect {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    
+    }
+
+        .Select{
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: transparent;
+            background-image: url("/images/arrowDown.svg");
+            background-repeat: no-repeat;
+            background-position: right center;
+            border: 0.5px solid #000000;
+            border-radius: 5px;
+            padding: 1em 2em 1em 1em;
+            width: 100%;
+            width: 154px;
+            cursor: pointer;
+            overflow: visible;
+    }
+    
+
+    .CustomSelectOption{
+        overflow: visible;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;    
+    color: #000000;
+}
+
+.ArrowDown{
+position: relative;
+width: 30px;
+height: 10px;
+}
+
+.ArrowAbsolute{
+top: 18px;
+position: absolute;
+right: 10px;
+}
+
+
+@media (max-width:875px){
+
+    .ArrowAbsolute{
+        left: 120px;
+    }
+}

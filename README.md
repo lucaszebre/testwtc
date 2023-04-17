@@ -1,38 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Whentocop
+
+Whentocop is a web application built with Next.js that helps sneaker enthusiasts stay up-to-date with the latest sneaker drops, news, and resell information. The application allows users to browse through different sneaker models and provides an index for resell value, making it easier for users to make informed decisions on their purchases.
+
+## Features
+
+- Browse the latest sneaker drops
+- Filter sneaker drops by resell index
+- Responsive design for optimal viewing on different devices
+- Customizable sneaker cart component
+- Custom select component for filtering options
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - a popular React framework for server-rendered applications
+- [React](https://reactjs.org/) - a JavaScript library for building user interfaces
+- [CSS Modules](https://github.com/css-modules/css-modules) - a CSS file in which all class names and animation names are scoped locally by default
 
 ## Getting Started
 
-First, run the development server:
+To run the Whentocop project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone the repository:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+git clone https://github.com/yourusername/whentocop.git
+cd whentocop 
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+2. Install the project dependencies:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. Start the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+4. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Here's a high-level overview of the project's main directories and files:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `/components`: Contains all the reusable React components, such as `Nav`, `Drops`, `SneakerCart`, and `CustomSelect`.
+- `/styles`: Contains the CSS modules for styling the components.
+- `/public`: Contains static assets, such as images and icons.
+- `/data`: Contains the `drops_data` file, which holds information about sneaker drops.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To contribute to the Whentocop project, please follow these steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Fork the repository.
+2. Create a new branch with a descriptive name.
+3. Make changes to the code and commit your changes.
+4. Push your changes to your forked repository.
+5. Create a pull request to the main repository.
+
+## License
+
+This project is released under the [MIT License](https://opensource.org/licenses/MIT).
+
