@@ -1,3 +1,11 @@
+@media (min-width:875px) {
+    .MobileMenu{
+        display: none;
+    }
+    
+}
+
+
 .Nav{
     height: 85px;
     background-color: black;
