@@ -1,11 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 // Import the necessary libraries, components, and styles
-import React from 'react';
+import React,{useState} from 'react';
 import Image from 'next/image';
 import styles from '@/styles/Nav.module.css';
 
 // Define the Nav component
 const Nav = () => {
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
 return (
     <>
         <nav className={styles.Nav}>
@@ -16,7 +23,10 @@ return (
                     <Image src="/images/logo-wtc.png" fill alt="logo-wtc" />
                 </div>
             {/* Create the hamburger menu div */}
-                <div className={styles.NavMenu}>
+            <div
+                        className={`${styles.NavMenu}`}
+                        onClick={toggleMenu}
+                    >
                     <span className={styles.span1}></span>
                     <span className={styles.span2}></span>
                     <span className={styles.span3}></span>
@@ -36,6 +46,23 @@ return (
                 </div>
             </div>
         </nav>
+        {(
+                <div className={styles.MobileMenu} 
+                style={{
+                    display:menuOpen?'flex':'none'
+                }}
+                >
+                    <ul className={styles.NavLink} onClick={toggleMenu}>
+                        ACCEUIL
+                    </ul>
+                    <ul className={styles.NavLink} onClick={toggleMenu}>
+                        DROPS
+                    </ul>
+                    <ul className={styles.NavLink} onClick={toggleMenu}>
+                        NEWS
+                    </ul>
+                </div>
+            )}
         </>
     );
 };

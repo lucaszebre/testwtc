@@ -105,7 +105,55 @@ letter-spacing: .1em;
     display: none;
 }
 
+.NavMenu {
+    cursor: pointer;
+}
+
+.NavMenu.open {
+    flex-direction: row;
+    gap: 0;
+}
+
+.NavMenuOpen .span1 {
+    transform-origin: center;
+    transform: translateY(1px) rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.NavMenuOpen .span2 {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.NavMenuOpen .span3 {
+    transform-origin: center;
+    transform: translateY(-1px) rotate(-45deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.MobileMenu {
+    display: none;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.MobileMenu ul {
+    text-align: center;
+}
+
+
 @media (max-width:875px) {
+    .MobileMenu {
+        display: flex;
+    }
     .NavMenu{
         display: flex;
         flex-direction: column;
