@@ -1,17 +1,36 @@
 /* eslint-disable react/no-unescaped-entities */
 // Import the necessary libraries, components, and styles
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import Image from 'next/image';
 import styles from '@/styles/Nav.module.css';
 
 // Define the Nav component
 const Nav = () => {
+    // state to toggle the Mobile menu 
+    const [menuOpen, setMenuOpen] = useState(false);  
 
-    const [menuOpen, setMenuOpen] = useState(false);
-
+    // function to toggle the state 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
+
+    const checkWindowSize = () => {
+        if (window.innerWidth >= 875) {
+            setMenuOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        // Add the event listener when the component is mounted
+        window.addEventListener('resize', checkWindowSize);
+        
+        // Remove the event listener when the component is unmounted
+        return () => {
+            window.removeEventListener('resize', checkWindowSize);
+        };
+    }, []);
+
+
 
 return (
     <>
@@ -47,10 +66,10 @@ return (
             </div>
         </nav>
         {(
-                <div className={styles.MobileMenu} 
-                style={{
-                    display:menuOpen?'flex':'none'
-                }}
+                <div
+                className={`${styles.MobileMenu} ${
+                    menuOpen ? styles.MobileMenuOpen : ''
+                }`}
                 >
                     <ul className={styles.NavLink} onClick={toggleMenu}>
                         ACCEUIL

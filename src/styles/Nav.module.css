@@ -1,12 +1,16 @@
-@media (min-width:875px) {
+@media (min-width:870px) {
     .MobileMenu{
         display: none;
+        transition: transform 0.3s ease;
+        transform: translateY(-200%);
     }
     
 }
 
 
 .Nav{
+    position: relative;
+    z-index: 20;
     height: 85px;
     background-color: black;
     display: flex;
@@ -140,8 +144,10 @@ letter-spacing: .1em;
 }
 
 
+
+
 .MobileMenu {
-    display: none;
+    display: flex;
     background-color: black;
     position: absolute;
     top: 60px;
@@ -151,7 +157,13 @@ letter-spacing: .1em;
     flex-direction: column;
     gap: 1em;
     padding: 1em;
+    transition: transform 0.3s ease;
+    transform: translateY(-200%);
 }
+.MobileMenuOpen {
+    transform: translateY(0%);
+    }
+
 
 .MobileMenu ul {
     text-align: center;
@@ -174,18 +186,21 @@ letter-spacing: .1em;
         width: 25px;
         height: 3px;
         border-radius: 3px;
+        box-shadow: rgb(39, 213, 159) 0px 0px 10.9862px, rgb(39, 213, 159) 0px 0px 6.27784px, rgb(39, 213, 159) 0px 0px 3.66207px, rgb(39, 213, 159) 0px 0px 1.83104px, rgb(39, 213, 159) 0px 0px 0.523153px, rgb(39, 213, 159) 0px 0px 0.261577px;
     }
     .span2{
         background-color: #00FFB0;
         width: 13px;
         height: 3px;
         border-radius: 3px;
+        box-shadow: rgb(39, 213, 159) 0px 0px 10.9862px, rgb(39, 213, 159) 0px 0px 6.27784px, rgb(39, 213, 159) 0px 0px 3.66207px, rgb(39, 213, 159) 0px 0px 1.83104px, rgb(39, 213, 159) 0px 0px 0.523153px, rgb(39, 213, 159) 0px 0px 0.261577px;
     }
     .span3{
         background-color: #00FFB0;
         width: 20px;
         height: 3px;
         border-radius: 3px;
+        box-shadow: rgb(39, 213, 159) 0px 0px 10.9862px, rgb(39, 213, 159) 0px 0px 6.27784px, rgb(39, 213, 159) 0px 0px 3.66207px, rgb(39, 213, 159) 0px 0px 1.83104px, rgb(39, 213, 159) 0px 0px 0.523153px, rgb(39, 213, 159) 0px 0px 0.261577px;
     }
     .NavBlock{
         display: none;
